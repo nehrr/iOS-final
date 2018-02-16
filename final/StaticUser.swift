@@ -8,6 +8,8 @@
 
 import UIKit
 
-class StaticUser : User {
-    static let user: User? = User()
+class StaticUser {
+    static let instance: StaticUser? = StaticUser()
+    
+    var user: User?
 }

@@ -10,6 +10,7 @@ import UIKit
 
 class SignUp: UIView {
     @IBOutlet var contentView: UIView!
+    @IBOutlet weak var signUpTitle: UILabel!
     
     @IBOutlet weak var emailLbl: UILabel!
     @IBOutlet weak var emailTxt: UITextField!

@@ -28,11 +28,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hd3-fa-W3c" customClass="Profile" customModule="final" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kSf-Uu-1iq"/>
                     </view>
                     <connections>
+                        <outlet property="profile" destination="hd3-fa-W3c" id="kcC-v3-G3i"/>
                         <outlet property="signIn" destination="l2k-Wq-m6u" id="VaR-u0-bVO"/>
                         <outlet property="signUp" destination="YuT-2U-npG" id="Xjd-Zy-lmh"/>
                     </connections>

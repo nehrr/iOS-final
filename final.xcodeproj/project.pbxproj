@@ -20,6 +20,9 @@
 		4277F0FA2035A5470017C3C2 /* StaticUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277F0F92035A5470017C3C2 /* StaticUser.swift */; };
 		4277F0FC2035A6180017C3C2 /* SignUpViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277F0FB2035A6180017C3C2 /* SignUpViewDelegate.swift */; };
 		4277F0FE2035A6280017C3C2 /* SignInViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277F0FD2035A6280017C3C2 /* SignInViewDelegate.swift */; };
+		427C801C2036E87400C24381 /* Profile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 427C801B2036E87400C24381 /* Profile.xib */; };
+		427C801E2036E88800C24381 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C801D2036E88800C24381 /* Profile.swift */; };
+		427C80202036EA5C00C24381 /* ProfileDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C801F2036EA5C00C24381 /* ProfileDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		4277F0F92035A5470017C3C2 /* StaticUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticUser.swift; sourceTree = "<group>"; };
 		4277F0FB2035A6180017C3C2 /* SignUpViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewDelegate.swift; sourceTree = "<group>"; };
 		4277F0FD2035A6280017C3C2 /* SignInViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewDelegate.swift; sourceTree = "<group>"; };
+		427C801B2036E87400C24381 /* Profile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Profile.xib; sourceTree = "<group>"; };
+		427C801D2036E88800C24381 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		427C801F2036EA5C00C24381 /* ProfileDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,9 @@
 				4277F0FB2035A6180017C3C2 /* SignUpViewDelegate.swift */,
 				4277F0F72035A53E0017C3C2 /* User.swift */,
 				4277F0F92035A5470017C3C2 /* StaticUser.swift */,
+				427C801B2036E87400C24381 /* Profile.xib */,
+				427C801D2036E88800C24381 /* Profile.swift */,
+				427C801F2036EA5C00C24381 /* ProfileDelegate.swift */,
 			);
 			path = final;
 			sourceTree = "<group>";
@@ -148,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4277F0E820359C5E0017C3C2 /* LaunchScreen.storyboard in Resources */,
+				427C801C2036E87400C24381 /* Profile.xib in Resources */,
 				4277F0E520359C5E0017C3C2 /* Assets.xcassets in Resources */,
 				4277F0F420359D9E0017C3C2 /* SignUp.xib in Resources */,
 				4277F0E320359C5E0017C3C2 /* Main.storyboard in Resources */,
@@ -169,6 +179,8 @@
 				4277F0FA2035A5470017C3C2 /* StaticUser.swift in Sources */,
 				4277F0F220359C860017C3C2 /* SignIn.swift in Sources */,
 				4277F0F82035A53E0017C3C2 /* User.swift in Sources */,
+				427C801E2036E88800C24381 /* Profile.swift in Sources */,
+				427C80202036EA5C00C24381 /* ProfileDelegate.swift in Sources */,
 				4277F0DE20359C5E0017C3C2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

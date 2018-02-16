@@ -11,6 +11,7 @@ import UIKit
 class SignIn: UIView {
     @IBOutlet weak var contentView: UIView!
     
+    @IBOutlet weak var signInTitle: UILabel!
     @IBOutlet weak var emailLbl: UILabel!
     @IBOutlet weak var emailTxt: UITextField!
     
