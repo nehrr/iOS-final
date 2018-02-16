@@ -50,7 +50,7 @@ class LoginViewController: UIViewController, SignUpViewDelegate, SignInViewDeleg
     
     func chngEmail() {
         if profile.chngEmailTxt.text != "" {
-            if isValid(profile.chngEmailTxt.text!) {
+            if isValid(profile.chngEmailTxt.text!) == true {
                 if let newEmail = profile.chngEmailTxt.text {
                     aUser?.user?.email = newEmail
                     
