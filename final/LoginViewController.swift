@@ -120,6 +120,7 @@ class LoginViewController: UIViewController, SignUpViewDelegate, SignInViewDeleg
         signIn.emailTxt.backgroundColor = UIColor.white
         signIn.pwTxt.backgroundColor = UIColor.white
         
+        //Delete User instance
         aUser?.user = nil
         
         signIn.isHidden = false
