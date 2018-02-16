@@ -16,7 +16,7 @@ class Profile: UIView {
     @IBOutlet weak var profilePic: UIImageView!
     
     @IBAction func backBtn(_ sender: Any) {
-        delegate?.back()
+        delegate?.deleteAcc()
     }
     @IBOutlet weak var msgLbl: UILabel!
     @IBOutlet weak var chngPwLbl: UILabel!

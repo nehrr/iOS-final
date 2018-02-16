@@ -9,7 +9,7 @@
 import UIKit
 
 protocol ProfileDelegate {
-    func back()
+    func deleteAcc()
     func chngPw()
     func chngEmail()
 }

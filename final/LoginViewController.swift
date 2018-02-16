@@ -110,13 +110,17 @@ class LoginViewController: UIViewController, SignUpViewDelegate, SignInViewDeleg
         }
     }
     
-    func back() {
-        signIn.errorMsg.text = ""
+    func deleteAcc() {
+        signIn.errorMsg.text = "You have deleted your account"
+        signIn.errorMsg.textColor = UIColor.red
+        
         signUp.errorMsg.text = ""
         profile.msgLbl.text = ""
         
         signIn.emailTxt.backgroundColor = UIColor.white
         signIn.pwTxt.backgroundColor = UIColor.white
+        
+        aUser?.user = nil
         
         signIn.isHidden = false
         signUp.isHidden = true

@@ -18,23 +18,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YuT-2U-npG" customClass="SignUp" customModule="final" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YuT-2U-npG" customClass="SignUp" customModule="final" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l2k-Wq-m6u" customClass="SignIn" customModule="final" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2k-Wq-m6u" customClass="SignIn" customModule="final" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hd3-fa-W3c" customClass="Profile" customModule="final" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hd3-fa-W3c" customClass="Profile" customModule="final" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l2k-Wq-m6u" firstAttribute="leading" secondItem="kSf-Uu-1iq" secondAttribute="leading" id="38a-N3-MBp"/>
+                            <constraint firstItem="l2k-Wq-m6u" firstAttribute="bottom" secondItem="kSf-Uu-1iq" secondAttribute="bottom" id="BWa-Jr-aC4"/>
+                            <constraint firstItem="l2k-Wq-m6u" firstAttribute="trailing" secondItem="kSf-Uu-1iq" secondAttribute="trailing" id="DhR-Oy-WtQ"/>
+                            <constraint firstItem="YuT-2U-npG" firstAttribute="leading" secondItem="kSf-Uu-1iq" secondAttribute="leading" id="Gf4-3t-9s2"/>
+                            <constraint firstItem="YuT-2U-npG" firstAttribute="trailing" secondItem="kSf-Uu-1iq" secondAttribute="trailing" id="QTF-rb-jMQ"/>
+                            <constraint firstItem="YuT-2U-npG" firstAttribute="bottom" secondItem="kSf-Uu-1iq" secondAttribute="bottom" id="bdL-nz-Z7y"/>
+                            <constraint firstItem="hd3-fa-W3c" firstAttribute="bottom" secondItem="kSf-Uu-1iq" secondAttribute="bottom" id="j93-68-fSU"/>
+                            <constraint firstItem="hd3-fa-W3c" firstAttribute="leading" secondItem="kSf-Uu-1iq" secondAttribute="leading" id="jTC-xe-E51"/>
+                            <constraint firstItem="YuT-2U-npG" firstAttribute="top" secondItem="kSf-Uu-1iq" secondAttribute="top" id="qZL-c9-3Zs"/>
+                            <constraint firstItem="l2k-Wq-m6u" firstAttribute="top" secondItem="OPg-j5-lnw" secondAttribute="top" id="sE0-Y3-baw"/>
+                            <constraint firstItem="hd3-fa-W3c" firstAttribute="top" secondItem="OPg-j5-lnw" secondAttribute="top" id="tr4-Ek-8b7"/>
+                            <constraint firstItem="hd3-fa-W3c" firstAttribute="trailing" secondItem="kSf-Uu-1iq" secondAttribute="trailing" id="xnJ-ZX-FhD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kSf-Uu-1iq"/>
                     </view>
                     <connections>
