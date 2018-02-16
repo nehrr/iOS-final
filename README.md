@@ -11,8 +11,8 @@ Once logged in, you will have access to a **profile page** which contains your e
 
 ### Colouring
 
-The text fields will turn red if they are not filled properly. They will return to their regular white once the error/s has/ve been corrected.
+The text fields will turn **red** if they are not filled properly. They will return to their regular white once the error/s has/ve been corrected.
 
 ### Error / success messages
 
-Likewise, error and success messages will appear depending on the action that has been attempted and its result. Error messages appear in red, success messages appear in green. They both disappear once the issues have been solved.
+Likewise, error and success messages will appear depending on the action that has been attempted and its result. Error messages appear in **red**, success messages appear in **green**. They both disappear once the issues have been solved.
