@@ -133,6 +133,7 @@ class LoginViewController: UIViewController, SignUpViewDelegate, SignInViewDeleg
     
     func rgstr() {
         //Reset msg to avoid it showing 'you have been registered' again
+        //if you go back to the login page after going to the register one
         signIn.errorMsg.text = ""
         
         signUp.isHidden = false
