@@ -7,7 +7,8 @@ This is the requested app following this week's classes. It follows the  **Efrei
 
 ### Profile
 
-Once logged in, you will have access to a **profile page** which contains your email and password (not hidden) as well as the ability to change both. This profile is a new **custom view** and has its own class and delegate.
+Once logged in, you will have access to a **profile page** which contains your email and password (not hidden) as well as the ability to change both. You can also **delete** your account from this view. 
+This profile is a new **custom view** and has its own class and delegate.
 
 ### Colouring
 
