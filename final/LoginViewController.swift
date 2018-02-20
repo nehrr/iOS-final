@@ -155,11 +155,16 @@ class LoginViewController: UIViewController, SignUpViewDelegate, SignInViewDeleg
         signIn.emailTxt.backgroundColor = UIColor.white
         signIn.pwTxt.backgroundColor = UIColor.white
         
+        if signIn.emailTxt.text != "" {
         if let userEmail = aUser?.user?.email, let userPw = aUser?.user?.password {
             if userEmail != "" {
-                if userPw != "" {
-                    if aUser?.user!.email == signIn.emailTxt.text {
-
+                print("in unwrapped email loop \(userEmail)")
+                
+                if aUser?.user!.email == signIn.emailTxt.text {
+                    
+                   if userPw != "" {
+                    print("in unwrapped pw loop \(userPw)")
+                    
                         if aUser?.user!.password == signIn.pwTxt.text {
                             
                         signIn.errorMsg.textColor = UIColor.green
@@ -172,24 +177,23 @@ class LoginViewController: UIViewController, SignUpViewDelegate, SignInViewDeleg
                         
                         profile.emailLbl.text = "Your email is: \(aUser!.user!.email)"
                         profile.pwLbl.text = "Your password is: \(aUser!.user!.password)"
+                            
                         } else {
                             signIn.pwTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
                             
                             signIn.errorMsg.textColor = UIColor.red
                             signIn.errorMsg.text = "Wrong password"
-                        }
-                        
-                    }
-                    
-                } else {
+                    }}
+                }
+            }}
+        } else {
             signIn.emailTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
     
             signIn.errorMsg.textColor = UIColor.red
             signIn.errorMsg.text = "Wrong email"
         }
     }
-        }}
-    
+        
     func rgstrAct() {
         //Empty errorMsg just in case
         signUp.errorMsg.text = ""
