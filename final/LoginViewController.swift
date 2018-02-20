@@ -120,7 +120,7 @@ class LoginViewController: UIViewController, SignUpViewDelegate, SignInViewDeleg
         signIn.emailTxt.backgroundColor = UIColor.white
         signIn.pwTxt.backgroundColor = UIColor.white
         
-        //Delete User instance
+        //Delete User instance)
         aUser?.user = nil
         
         signIn.isHidden = false
@@ -149,35 +149,46 @@ class LoginViewController: UIViewController, SignUpViewDelegate, SignInViewDeleg
         //Empty errorMsg just in case
         signIn.errorMsg.text = ""
         
+        print("email : \(aUser?.user?.email) pw : \(aUser?.user?.password)")
+        
         //Reset fields background to white
         signIn.emailTxt.backgroundColor = UIColor.white
         signIn.pwTxt.backgroundColor = UIColor.white
         
-        if aUser?.user?.email == signIn.emailTxt.text {
-            if aUser?.user?.password == signIn.pwTxt.text {
-            signIn.errorMsg.textColor = UIColor.green
-            signIn.errorMsg.text = "Logged in"
-            profile.isHidden = false
-            signIn.isHidden = true
-            
-            profile.msgLbl.textColor = UIColor.blue
-            profile.msgLbl.text = "Welcome back!"
-            
-            profile.emailLbl.text = "Your email is: \(aUser!.user!.email)"
-            profile.pwLbl.text = "Your password is: \(aUser!.user!.password)"
-            } else {
-                signIn.pwTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
-                
-                signIn.errorMsg.textColor = UIColor.red
-                signIn.errorMsg.text = "Wrong password"
-            }
-        } else {
+        if let userEmail = aUser?.user?.email, let userPw = aUser?.user?.password {
+            if userEmail != "" {
+                if userPw != "" {
+                    if aUser?.user!.email == signIn.emailTxt.text {
+
+                        if aUser?.user!.password == signIn.pwTxt.text {
+                            
+                        signIn.errorMsg.textColor = UIColor.green
+                        signIn.errorMsg.text = "Logged in"
+                        profile.isHidden = false
+                        signIn.isHidden = true
+                        
+                        profile.msgLbl.textColor = UIColor.blue
+                        profile.msgLbl.text = "Welcome back!"
+                        
+                        profile.emailLbl.text = "Your email is: \(aUser!.user!.email)"
+                        profile.pwLbl.text = "Your password is: \(aUser!.user!.password)"
+                        } else {
+                            signIn.pwTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
+                            
+                            signIn.errorMsg.textColor = UIColor.red
+                            signIn.errorMsg.text = "Wrong password"
+                        }
+                        
+                    }
+                    
+                } else {
             signIn.emailTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
     
             signIn.errorMsg.textColor = UIColor.red
             signIn.errorMsg.text = "Wrong email"
         }
     }
+        }}
     
     func rgstrAct() {
         //Empty errorMsg just in case
