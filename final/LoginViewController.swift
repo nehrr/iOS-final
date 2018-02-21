@@ -15,7 +15,7 @@ class LoginViewController: UIViewController, SignUpViewDelegate, SignInViewDeleg
     @IBOutlet weak var signIn: SignIn!
     @IBOutlet weak var profile: Profile!
     
-    var aUser: StaticUser? 
+    var aUser: StaticUser?
     
     override func viewDidLoad() {
         
@@ -31,12 +31,12 @@ class LoginViewController: UIViewController, SignUpViewDelegate, SignInViewDeleg
         signUp.delegate = self
         signIn.delegate = self
         profile.delegate = self
-
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
+        
     }
     
     //Email validation test
@@ -72,7 +72,7 @@ class LoginViewController: UIViewController, SignUpViewDelegate, SignInViewDeleg
             profile.msgLbl.text = "Your new email cannot be empty"
             profile.msgLbl.textColor = UIColor.red
         }
-            
+        
     }
     
     func chngPw() {
@@ -156,44 +156,47 @@ class LoginViewController: UIViewController, SignUpViewDelegate, SignInViewDeleg
         signIn.pwTxt.backgroundColor = UIColor.white
         
         if signIn.emailTxt.text != "" {
-        if let userEmail = aUser?.user?.email, let userPw = aUser?.user?.password {
-            if userEmail != "" {
-                print("in unwrapped email loop \(userEmail)")
-                
-                if aUser?.user!.email == signIn.emailTxt.text {
+            if let userEmail = aUser?.user?.email, let userPw = aUser?.user?.password {
+                if userEmail != "" {
+                    print("in unwrapped email loop \(userEmail)")
                     
-                   if userPw != "" {
-                    print("in unwrapped pw loop \(userPw)")
-                    
-                        if aUser?.user!.password == signIn.pwTxt.text {
-                            
-                        signIn.errorMsg.textColor = UIColor.green
-                        signIn.errorMsg.text = "Logged in"
-                        profile.isHidden = false
-                        signIn.isHidden = true
+                    if aUser?.user!.email == signIn.emailTxt.text {
                         
-                        profile.msgLbl.textColor = UIColor.blue
-                        profile.msgLbl.text = "Welcome back!"
-                        
-                        profile.emailLbl.text = "Your email is: \(aUser!.user!.email)"
-                        profile.pwLbl.text = "Your password is: \(aUser!.user!.password)"
-                            
-                        } else {
+                        if signIn.pwTxt.text != "" {
+                            if userPw != "" {
+                                print("in unwrapped pw loop \(userPw)")
+                                
+                                if aUser?.user!.password == signIn.pwTxt.text {
+                                    
+                                    signIn.errorMsg.textColor = UIColor.green
+                                    signIn.errorMsg.text = "Logged in"
+                                    profile.isHidden = false
+                                    signIn.isHidden = true
+                                    
+                                    profile.msgLbl.textColor = UIColor.blue
+                                    profile.msgLbl.text = "Welcome back!"
+                                    
+                                    profile.emailLbl.text = "Your email is: \(aUser!.user!.email)"
+                                    profile.pwLbl.text = "Your password is: \(aUser!.user!.password)"
+                                    
+                                } } } else {
                             signIn.pwTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
                             
                             signIn.errorMsg.textColor = UIColor.red
                             signIn.errorMsg.text = "Wrong password"
-                    }}
+                        }
+                    }
                 }
-            }}
-        } else {
+                
+            } } else {
             signIn.emailTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
-    
+            
             signIn.errorMsg.textColor = UIColor.red
             signIn.errorMsg.text = "Wrong email"
         }
     }
-        
+    
+    
     func rgstrAct() {
         //Empty errorMsg just in case
         signUp.errorMsg.text = ""
@@ -214,7 +217,7 @@ class LoginViewController: UIViewController, SignUpViewDelegate, SignInViewDeleg
                 
                 //Check if pw length is sufficient
                 if (signUp.pwTxt.text!.count > 5) || (signUp.pwCnfrmTxt.text!.count > 5) {
-                
+                    
                     //Check if pw match
                     if signUp.pwTxt.text == signUp.pwCnfrmTxt.text {
                         if let newUserEmail = signUp.emailTxt.text {
@@ -237,7 +240,7 @@ class LoginViewController: UIViewController, SignUpViewDelegate, SignInViewDeleg
                         goToLogin()
                     } else {
                         signUp.emailTxt.backgroundColor = UIColor.white
-
+                        
                         signUp.errorMsg.textColor = UIColor.red
                         signUp.errorMsg.text = "Passwords do not match"
                         signUp.pwTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
