@@ -156,21 +156,23 @@
             signIn.emailTxt.backgroundColor = UIColor.white
             signIn.pwTxt.backgroundColor = UIColor.white
             
-            if signIn.emailTxt.text == "" {
-                print("Wrong email")
+            if signIn.emailTxt.text == "" || signIn.pwTxt.text == "" {
+                print("Wrong tokens")
+                signIn.pwTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
                 signIn.emailTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
                 
                 signIn.errorMsg.textColor = UIColor.red
-                signIn.errorMsg.text = "Wrong email"
+                signIn.errorMsg.text = "Wrong tokens"
                 return
             }
             
-            if signIn.pwTxt.text == "" {
-                print("Wrong password")
+            if aUser?.user?.email == nil || aUser?.user?.password == nil {
+                print("Wrong tokens")
                 signIn.pwTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
+                signIn.emailTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
                 
                 signIn.errorMsg.textColor = UIColor.red
-                signIn.errorMsg.text = "Wrong password"
+                signIn.errorMsg.text = "Wrong tokens"
                 return
             }
             
