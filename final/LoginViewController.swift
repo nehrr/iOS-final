@@ -49,6 +49,10 @@
         }
         
         func chngEmail() {
+            //Resetting it to white to avoid it staying red if prompted before
+            profile.chngPwTxt.backgroundColor = UIColor.white
+            profile.chngPwCnfmTxt.backgroundColor = UIColor.white
+            
             if profile.chngEmailTxt.text != "" {
                 if isValid(profile.chngEmailTxt.text!) == true {
                     if let newEmail = profile.chngEmailTxt.text {
@@ -76,6 +80,9 @@
         }
         
         func chngPw() {
+            //Resetting to white to avoid it staying red if prompted before
+            profile.chngEmailTxt.backgroundColor = UIColor.white
+            
             if (profile.chngPwTxt.text != "") && (profile.chngPwCnfmTxt.text != ""){
                 if profile.chngPwTxt.text!.count > 5 && profile.chngPwCnfmTxt.text!.count > 5 {
                     if profile.chngPwTxt.text == profile.chngPwCnfmTxt.text {
@@ -89,6 +96,7 @@
                             profile.chngEmailTxt.backgroundColor = UIColor.white
                             profile.chngPwTxt.backgroundColor = UIColor.white
                             profile.chngPwCnfmTxt.backgroundColor = UIColor.white
+                            
                         }
                     } else {
                         profile.msgLbl.text = "Your new passwords do not match"
