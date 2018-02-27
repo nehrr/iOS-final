@@ -120,7 +120,7 @@
             signIn.emailTxt.backgroundColor = UIColor.white
             signIn.pwTxt.backgroundColor = UIColor.white
             
-            //Delete User instance)
+            //Delete User instance
             aUser?.user = nil
             
             signIn.isHidden = false
@@ -216,118 +216,6 @@
             }
             
         }
-        
-        
-        //        func login() {
-        //            //Empty errorMsg just in case
-        //            signIn.errorMsg.text = ""
-        //
-        //            print("email : \(aUser?.user?.email) pw : \(aUser?.user?.password)")
-        //
-        //            //Reset fields background to white
-        //            signIn.emailTxt.backgroundColor = UIColor.white
-        //            signIn.pwTxt.backgroundColor = UIColor.white
-        //
-        //            if signIn.emailTxt.text != "" {
-        //                print("non empty email")
-        //                if let userEmail = aUser?.user?.email, let userPw = aUser?.user?.password {
-        //                    print("pre unwrapping")
-        //                    if userEmail != "" {
-        //                        print("in unwrapped email loop \(userEmail)")
-        //
-        //                        //                    if aUser?.user!.email == signIn.emailTxt.text {
-        //
-        //                        if signIn.pwTxt.text != "" || userPw != signIn.pwTxt.text {
-        //                            if userPw != "" {
-        //                                print("in unwrapped pw loop \(userPw)")
-        //
-        //                                if aUser?.user!.email == signIn.emailTxt.text {
-        //                                    print("in email ok loop")
-        //                                    if aUser?.user!.password == signIn.pwTxt.text {
-        //                                        print("in pw ok loop")
-        //
-        //                                        signIn.errorMsg.textColor = UIColor.green
-        //                                        signIn.errorMsg.text = "Logged in"
-        //                                        profile.isHidden = false
-        //                                        signIn.isHidden = true
-        //
-        //                                        profile.msgLbl.textColor = UIColor.blue
-        //                                        profile.msgLbl.text = "Welcome back!"
-        //
-        //                                        profile.emailLbl.text = "Your email is: \(aUser!.user!.email)"
-        //                                        profile.pwLbl.text = "Your password is: \(aUser!.user!.password)"
-        //
-        //                                    }  else {
-        //                                    signIn.pwTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
-        //
-        //                                    signIn.errorMsg.textColor = UIColor.red
-        //                                    signIn.errorMsg.text = "Wrong password"
-        //                                    } }
-        //                                 } } else {
-        //                            signIn.pwTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
-        //
-        //                            signIn.errorMsg.textColor = UIColor.red
-        //                            signIn.errorMsg.text = "Wrong password"
-        //                        }
-        //                    }  } else {
-        //                signIn.emailTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
-        //
-        //                signIn.errorMsg.textColor = UIColor.red
-        //                signIn.errorMsg.text = "Wrong email"
-        //                    }
-        //            } else {
-        //                signIn.emailTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
-        //                signIn.pwTxt.backgroundColor = UIColor(red:0.98, green:0.72, blue:0.72, alpha:1.0)
-        //
-        //                signIn.errorMsg.textColor = UIColor.red
-        //                signIn.errorMsg.text = "Wrong tokens"
-        //            }
-        //        }
-        
-        //        func login() {
-        //            //Empty errorMsg just in case
-        //            signIn.errorMsg.text = ""
-        //
-        //            print("email : \(aUser?.user?.email) pw : \(aUser?.user?.password)")
-        //
-        //            //Reset fields background to white
-        //            signIn.emailTxt.backgroundColor = UIColor.white
-        //            signIn.pwTxt.backgroundColor = UIColor.white
-        //
-        //            if signIn.emailTxt.text != "" || signIn.pwTxt.text != "" {
-        //                if signIn.emailTxt.text != "" {
-        //                    if let userEmail = aUser?.user?.email, let userPw = aUser?.user?.password {
-        //                        if userEmail != "" {
-        //
-        //                            if signIn.pwTxt.text != "" {
-        //                                if aUser?.user!.email == signIn.emailTxt.text {
-        //                                    if userPw != "" {
-        //                                        if aUser?.user!.password == signIn.pwTxt.text {
-        //                                            signIn.errorMsg.textColor = UIColor.green
-        //                                            signIn.errorMsg.text = "Logged in"
-        //                                            profile.isHidden = false
-        //                                            signIn.isHidden = true
-        //
-        //                                            profile.msgLbl.textColor = UIColor.blue
-        //                                            profile.msgLbl.text = "Welcome back!"
-        //
-        //                                            profile.emailLbl.text = "Your email is: \(aUser!.user!.email)"
-        //                                            profile.pwLbl.text = "Your password is: \(aUser!.user!.password)"
-        //                                        }
-        //                                    }
-        //                                }
-        //                            } else {
-        //                                signIn.errorMsg.text = "Wrong password"
-        //                            }
-        //                        }
-        //                    }
-        //                } else {
-        //                    signIn.errorMsg.text = "Wrong email"
-        //                }
-        //            } else {
-        //                signIn.errorMsg.text = "Please fill both fields"
-        //            }
-        //        }
         
         func rgstrAct() {
             //Empty errorMsg just in case
