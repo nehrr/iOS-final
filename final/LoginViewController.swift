@@ -136,6 +136,17 @@
             signUp.isHidden = true
         }
         
+        func returnLogin() {
+            signIn.errorMsg.text = ""
+            
+            signIn.emailTxt.backgroundColor = UIColor.white
+            signIn.pwTxt.backgroundColor = UIColor.white
+            
+            signIn.isHidden = false
+            signUp.isHidden = true
+            profile.isHidden = true
+        }
+        
         func rgstr() {
             //Reset msg to avoid it showing 'you have been registered' again
             //if you go back to the login page after going to the register one

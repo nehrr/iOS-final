@@ -12,4 +12,5 @@ protocol ProfileDelegate {
     func deleteAcc()
     func chngPw()
     func chngEmail()
+    func returnLogin()
 }

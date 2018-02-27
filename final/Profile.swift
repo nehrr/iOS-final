@@ -21,9 +21,15 @@ class Profile: UIView {
     @IBOutlet weak var msgLbl: UILabel!
     @IBOutlet weak var chngPwLbl: UILabel!
     @IBOutlet weak var chngPwTxt: UITextField!
+
+    @IBAction func logBtn(_ sender: Any) {
+        delegate?.returnLogin()
+    }
+    
     @IBAction func chngPwBtn(_ sender: Any) {
         delegate?.chngPw()
     }
+
     @IBOutlet weak var chngPwCnfmLbl: UILabel!
     @IBOutlet weak var chngPwCnfmTxt: UITextField!
     

@@ -133,6 +133,18 @@
                         <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="Mnc-9p-pse"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3my-Ca-oH9">
+                    <rect key="frame" x="16" y="604" width="343" height="33"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Go to login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="logBtn:" destination="-1" eventType="touchUpInside" id="p49-8J-Ygp"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -146,16 +158,19 @@
                 <constraint firstItem="krb-cX-bTt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="ASH-ut-zpG"/>
                 <constraint firstItem="9h5-xH-AeX" firstAttribute="top" secondItem="Aii-mC-8vz" secondAttribute="bottom" constant="20" id="ATY-rN-xM1"/>
                 <constraint firstAttribute="trailing" secondItem="P9l-La-JAb" secondAttribute="trailing" constant="16" id="EXi-am-hOA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3my-Ca-oH9" secondAttribute="trailing" constant="16" id="EZT-tq-Rbd"/>
                 <constraint firstAttribute="trailing" secondItem="38p-bP-gX5" secondAttribute="trailing" constant="16" id="GJx-Yh-wLB"/>
                 <constraint firstItem="XO2-oN-5S0" firstAttribute="top" secondItem="Edu-nR-E3D" secondAttribute="bottom" constant="20" id="Had-08-v6N"/>
                 <constraint firstAttribute="trailing" secondItem="JAj-Ga-CPs" secondAttribute="trailing" constant="16" id="HdA-SJ-hKb"/>
                 <constraint firstItem="Aii-mC-8vz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="IX2-HE-Ady"/>
+                <constraint firstItem="3my-Ca-oH9" firstAttribute="top" secondItem="P6h-8T-1HB" secondAttribute="bottom" constant="20" id="Jl5-pi-2te"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hpj-VI-cV4" secondAttribute="trailing" constant="16" id="Klu-Wc-T87"/>
                 <constraint firstItem="JAj-Ga-CPs" firstAttribute="top" secondItem="38p-bP-gX5" secondAttribute="bottom" constant="20" id="Pw8-HL-VgH"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cAa-3M-CQ9" secondAttribute="trailing" constant="16" id="RbB-vX-j6n"/>
                 <constraint firstItem="P6h-8T-1HB" firstAttribute="top" secondItem="XO2-oN-5S0" secondAttribute="bottom" constant="30" id="SKd-7Z-bec"/>
                 <constraint firstItem="krb-cX-bTt" firstAttribute="top" secondItem="OX8-3o-pT3" secondAttribute="bottom" constant="8" id="Szv-w3-eIR"/>
                 <constraint firstItem="P9l-La-JAb" firstAttribute="top" secondItem="JAj-Ga-CPs" secondAttribute="bottom" constant="8" id="V3p-73-p1c"/>
+                <constraint firstItem="3my-Ca-oH9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="VXZ-Ld-6Bk"/>
                 <constraint firstItem="Aii-mC-8vz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="W4q-oZ-pDq"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="krb-cX-bTt" secondAttribute="trailing" constant="16" id="Y8h-hz-zHM"/>
                 <constraint firstItem="Edu-nR-E3D" firstAttribute="top" secondItem="R6R-B4-IBZ" secondAttribute="bottom" constant="8" id="YBw-Eb-8Do"/>
